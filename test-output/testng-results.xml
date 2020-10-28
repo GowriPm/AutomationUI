@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="16" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-28T16:31:50 EDT" name="Suite" finished-at="2020-10-28T16:32:06 EDT" duration-ms="15732">
+    <groups>
+    </groups>
+    <test started-at="2020-10-28T16:31:50 EDT" name="New User Test" finished-at="2020-10-28T16:31:59 EDT" duration-ms="9308">
+      <class name="com.gp.AutomationUI.NewUserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gp.AutomationUI.NewUserTest@157853da]" started-at="2020-10-28T16:31:50 EDT" name="setUp" finished-at="2020-10-28T16:31:54 EDT" duration-ms="3802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startTest()[pri:0, instance:com.gp.AutomationUI.NewUserTest@157853da]" started-at="2020-10-28T16:31:54 EDT" name="startTest" finished-at="2020-10-28T16:31:55 EDT" duration-ms="1054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="checkPageExistsTest(java.lang.String)[pri:1, instance:com.gp.AutomationUI.NewUserTest@157853da]" started-at="2020-10-28T16:31:55 EDT" name="checkPageExistsTest" finished-at="2020-10-28T16:31:55 EDT" duration-ms="20" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[New User | Active Admin Depot]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPageExistsTest -->
+        <test-method signature="checkUsernameDisplayedTest(boolean)[pri:2, instance:com.gp.AutomationUI.NewUserTest@157853da]" started-at="2020-10-28T16:31:55 EDT" name="checkUsernameDisplayedTest" finished-at="2020-10-28T16:31:55 EDT" duration-ms="81" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUsernameDisplayedTest -->
+        <test-method signature="checkUserNameReadWriteTest(java.lang.String)[pri:3, instance:com.gp.AutomationUI.NewUserTest@157853da]" started-at="2020-10-28T16:31:55 EDT" name="checkUserNameReadWriteTest" finished-at="2020-10-28T16:31:55 EDT" duration-ms="168" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gpautomation]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserNameReadWriteTest -->
+        <test-method signature="checkPasswordReadWriteTest(java.lang.String)[pri:4, instance:com.gp.AutomationUI.NewUserTest@157853da]" started-at="2020-10-28T16:31:55 EDT" name="checkPasswordReadWriteTest" finished-at="2020-10-28T16:31:55 EDT" duration-ms="141" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Xyz.123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPasswordReadWriteTest -->
+        <test-method signature="checkPasswordMaskedTest()[pri:5, instance:com.gp.AutomationUI.NewUserTest@157853da]" started-at="2020-10-28T16:31:55 EDT" name="checkPasswordMaskedTest" finished-at="2020-10-28T16:31:55 EDT" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPasswordMaskedTest -->
+        <test-method signature="checkemailReadWriteTest(java.lang.String)[pri:6, instance:com.gp.AutomationUI.NewUserTest@157853da]" started-at="2020-10-28T16:31:55 EDT" name="checkemailReadWriteTest" finished-at="2020-10-28T16:31:56 EDT" duration-ms="148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gpautomation@nodomain.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkemailReadWriteTest -->
+        <test-method signature="createUserTest(java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:com.gp.AutomationUI.NewUserTest@157853da]" started-at="2020-10-28T16:31:56 EDT" name="createUserTest" finished-at="2020-10-28T16:31:56 EDT" duration-ms="519" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gpautomation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Xyz.123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[gpautomation@nodomain.com]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at com.gp.AutomationUI.NewUserTest.createUserTest(NewUserTest.java:112)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserTest -->
+        <test-method signature="cancelTest(java.lang.String)[pri:8, instance:com.gp.AutomationUI.NewUserTest@157853da]" started-at="2020-10-28T16:31:56 EDT" name="cancelTest" finished-at="2020-10-28T16:31:59 EDT" duration-ms="2579" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://qainterview.merchante-solutions.com/admin/users]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelTest -->
+        <test-method signature="createUserWithInvalidPasswordLengthTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:9, instance:com.gp.AutomationUI.NewUserTest@157853da]" started-at="2020-10-28T16:31:59 EDT" name="createUserWithInvalidPasswordLengthTest" finished-at="2020-10-28T16:31:59 EDT" duration-ms="592" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gpautomation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Xyz]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[gpautomation@nodomain.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[is too short (minimum is 4 characters)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserWithInvalidPasswordLengthTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gp.AutomationUI.NewUserTest@157853da]" started-at="2020-10-28T16:31:59 EDT" name="tearDown" finished-at="2020-10-28T16:31:59 EDT" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.gp.AutomationUI.NewUserTest -->
+    </test> <!-- New User Test -->
+    <test started-at="2020-10-28T16:31:59 EDT" name="Users Search Test" finished-at="2020-10-28T16:32:06 EDT" duration-ms="6348">
+      <class name="com.gp.AutomationUI.UsersSearchTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.gp.AutomationUI.UsersSearchTest@3315d2d7]" started-at="2020-10-28T16:31:59 EDT" name="setUp" finished-at="2020-10-28T16:32:03 EDT" duration-ms="3225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="startTest()[pri:0, instance:com.gp.AutomationUI.UsersSearchTest@3315d2d7]" started-at="2020-10-28T16:32:03 EDT" name="startTest" finished-at="2020-10-28T16:32:03 EDT" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method signature="checkPageExistsTest(java.lang.String)[pri:1, instance:com.gp.AutomationUI.UsersSearchTest@3315d2d7]" started-at="2020-10-28T16:32:03 EDT" name="checkPageExistsTest" finished-at="2020-10-28T16:32:03 EDT" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Users | Active Admin Depot]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkPageExistsTest -->
+        <test-method signature="checkUsernameDropdownDisplayedTest(boolean)[pri:2, instance:com.gp.AutomationUI.UsersSearchTest@3315d2d7]" started-at="2020-10-28T16:32:03 EDT" name="checkUsernameDropdownDisplayedTest" finished-at="2020-10-28T16:32:03 EDT" duration-ms="51" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUsernameDropdownDisplayedTest -->
+        <test-method signature="checkUserNameReadWriteTest(java.lang.String)[pri:3, instance:com.gp.AutomationUI.UsersSearchTest@3315d2d7]" started-at="2020-10-28T16:32:03 EDT" name="checkUserNameReadWriteTest" finished-at="2020-10-28T16:32:03 EDT" duration-ms="150" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gpautomation]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUserNameReadWriteTest -->
+        <test-method signature="checkemailReadWriteTest(java.lang.String)[pri:4, instance:com.gp.AutomationUI.UsersSearchTest@3315d2d7]" started-at="2020-10-28T16:32:03 EDT" name="checkemailReadWriteTest" finished-at="2020-10-28T16:32:04 EDT" duration-ms="161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gpautomation@nodomain.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkemailReadWriteTest -->
+        <test-method signature="checkFromDateReadWriteTest(java.lang.String)[pri:5, instance:com.gp.AutomationUI.UsersSearchTest@3315d2d7]" started-at="2020-10-28T16:32:04 EDT" name="checkFromDateReadWriteTest" finished-at="2020-10-28T16:32:04 EDT" duration-ms="197" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2020-10-26]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFromDateReadWriteTest -->
+        <test-method signature="checkToDateReadWriteTest(java.lang.String)[pri:5, instance:com.gp.AutomationUI.UsersSearchTest@3315d2d7]" started-at="2020-10-28T16:32:04 EDT" name="checkToDateReadWriteTest" finished-at="2020-10-28T16:32:04 EDT" duration-ms="149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2020-10-28]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkToDateReadWriteTest -->
+        <test-method signature="ApplyFiltersTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:com.gp.AutomationUI.UsersSearchTest@3315d2d7]" started-at="2020-10-28T16:32:04 EDT" name="ApplyFiltersTest" finished-at="2020-10-28T16:32:05 EDT" duration-ms="803" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gpautomation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gpautomation@nodomain.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Equals]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Contains]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2020-10-26]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ApplyFiltersTest -->
+        <test-method signature="clearFiltersTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:8, instance:com.gp.AutomationUI.UsersSearchTest@3315d2d7]" started-at="2020-10-28T16:32:05 EDT" name="clearFiltersTest" finished-at="2020-10-28T16:32:06 EDT" duration-ms="908" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[gpautomation]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[gpautomation@nodomain.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Equals]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Contains]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2020-10-26]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[2020-10-28]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearFiltersTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.gp.AutomationUI.UsersSearchTest@3315d2d7]" started-at="2020-10-28T16:32:06 EDT" name="tearDown" finished-at="2020-10-28T16:32:06 EDT" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.gp.AutomationUI.UsersSearchTest -->
+    </test> <!-- Users Search Test -->
+  </suite> <!-- Suite -->
+</testng-results>

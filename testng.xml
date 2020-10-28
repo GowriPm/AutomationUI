@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">  
+     <test name="New User Test">
+        <!-- This parameter will be passed this test only -->
+        <parameter name = "expectedTitle" value="New User | Active Admin Depot"/>
+      	<parameter name = "expectedStatus" value="true"/> 
+      	<parameter name = "username" value="gpautomation"/> 
+      	<parameter name = "password" value="Xyz.123"/>   <!-- TBD: Encrypt -->
+      	<parameter name = "invalidPassword" value="Xyz"/>
+      	<parameter name = "shortPasswordMessage" value="is too short (minimum is 4 characters)"/>
+      	<parameter name = "email" value="gpautomation@nodomain.com"/> 
+      	<parameter name = "usersSearchUrl" value="http://qainterview.merchante-solutions.com/admin/users"/>      	 	
+        <classes>
+            <class name="com.gp.AutomationUI.NewUserTest"/>  
+        </classes>
+     	</test>
+     	
+        <test name="Users Search Test">
+        <!-- This parameter will be passed this test only -->
+        <parameter name = "expectedTitle" value="Users | Active Admin Depot"/>
+      	<parameter name = "expectedStatus" value="true"/> 
+      	<parameter name = "username" value="gpautomation"/> 
+      	<parameter name = "fromDate" value="2020-10-26"/>   
+      	<parameter name = "toDate" value="2020-10-28"/>   
+      	<parameter name = "usernameOperator" value="Equals"/>
+      	<parameter name = "emailOperator" value="Contains"/>
+      	<parameter name = "email" value="gpautomation@nodomain.com"/> 
+      	<parameter name = "usersSearchUrl" value="http://qainterview.merchante-solutions.com/admin/users"/>      	 	
+        <classes>
+            <class name="com.gp.AutomationUI.UsersSearchTest"/>  
+        </classes>
+     	</test>    
+</suite> <!-- Suite -->

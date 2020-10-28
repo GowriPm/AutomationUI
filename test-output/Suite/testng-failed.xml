@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="New User Test(failed)">
+    <parameter name="password" value="Xyz.123"/>
+    <parameter name="shortPasswordMessage" value="is too short (minimum is 4 characters)"/>
+    <parameter name="invalidPassword" value="Xyz"/>
+    <parameter name="expectedTitle" value="New User | Active Admin Depot"/>
+    <parameter name="expectedStatus" value="true"/>
+    <parameter name="usersSearchUrl" value="http://qainterview.merchante-solutions.com/admin/users"/>
+    <parameter name="email" value="gpautomation@nodomain.com"/>
+    <parameter name="username" value="gpautomation"/>
+    <classes>
+      <class name="com.gp.AutomationUI.NewUserTest">
+        <methods>
+          <include name="startTest"/>
+          <include name="createUserTest" invocation-numbers="0"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.gp.AutomationUI.NewUserTest -->
+    </classes>
+  </test> <!-- New User Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

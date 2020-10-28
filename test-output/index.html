@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\MS_USR\eclipse-workspace1\AutomationUI\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods, 1 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.NewUserTest" class="method navigator-link" hash-for-method="createUserTest(gpautomation, Xyz.123, gpautomation@nodomain.com)">createUserTest(gpautomation, Xyz.123, gpautomation@nodomain.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.UsersSearchTest" class="method navigator-link" hash-for-method="ApplyFiltersTest(gpautomation, gpautomation@nodomain.com, Equals, Contains, 2020-10-26)">ApplyFiltersTest(gpautomation, gpautomation@nodomain.com, Equals, Contains, 2020-10-26)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.NewUserTest" class="method navigator-link" hash-for-method="cancelTest(http://qainterview.merchante-solutions.com/admin/users)">cancelTest(http://qainterview.merchante-solutions.com/admin/users)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.UsersSearchTest" class="method navigator-link" hash-for-method="checkFromDateReadWriteTest(2020-10-26)">checkFromDateReadWriteTest(2020-10-26)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.NewUserTest" class="method navigator-link" hash-for-method="checkPageExistsTest(New User | Active Admin Depot)">checkPageExistsTest(New User | Active Admin Depot)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.UsersSearchTest" class="method navigator-link" hash-for-method="checkPageExistsTest(Users | Active Admin Depot)">checkPageExistsTest(Users | Active Admin Depot)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.NewUserTest" class="method navigator-link" hash-for-method="checkPasswordMaskedTest">checkPasswordMaskedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.NewUserTest" class="method navigator-link" hash-for-method="checkPasswordReadWriteTest(Xyz.123)">checkPasswordReadWriteTest(Xyz.123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.UsersSearchTest" class="method navigator-link" hash-for-method="checkToDateReadWriteTest(2020-10-28)">checkToDateReadWriteTest(2020-10-28)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.NewUserTest" class="method navigator-link" hash-for-method="checkUserNameReadWriteTest(gpautomation)">checkUserNameReadWriteTest(gpautomation)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.UsersSearchTest" class="method navigator-link" hash-for-method="checkUserNameReadWriteTest(gpautomation)">checkUserNameReadWriteTest(gpautomation)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.NewUserTest" class="method navigator-link" hash-for-method="checkUsernameDisplayedTest(true)">checkUsernameDisplayedTest(true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.UsersSearchTest" class="method navigator-link" hash-for-method="checkUsernameDropdownDisplayedTest(true)">checkUsernameDropdownDisplayedTest(true)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.NewUserTest" class="method navigator-link" hash-for-method="checkemailReadWriteTest(gpautomation@nodomain.com)">checkemailReadWriteTest(gpautomation@nodomain.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.UsersSearchTest" class="method navigator-link" hash-for-method="checkemailReadWriteTest(gpautomation@nodomain.com)">checkemailReadWriteTest(gpautomation@nodomain.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.UsersSearchTest" class="method navigator-link" hash-for-method="clearFiltersTest(gpautomation, gpautomation@nodomain.com, Equals, Contains, 2020-10-26, 2020-10-28)">clearFiltersTest(gpautomation, gpautomation@nodomain.com, Equals, Contains, 2020-10-26, 2020-10-28)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.gp.AutomationUI.NewUserTest" class="method navigator-link" hash-for-method="createUserWithInvalidPasswordLengthTest(gpautomation, Xyz, gpautomation@nodomain.com, is too short (minimum is 4 characters))">createUserWithInvalidPasswordLengthTest(gpautomation, Xyz, gpautomation@nodomain.com, is too short (minimum is 4 characters))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.gp.AutomationUI.NewUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUserTest(gpautomation, Xyz.123, gpautomation@nodomain.com)">
+                  </a> <!-- createUserTest(gpautomation, Xyz.123, gpautomation@nodomain.com) -->
+                  <span class="method-name">createUserTest</span>
+                  <span class="parameters">(gpautomation, Xyz.123, gpautomation@nodomain.com)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.gp.AutomationUI.NewUserTest.createUserTest(NewUserTest.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.gp.AutomationUI.UsersSearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ApplyFiltersTest(gpautomation, gpautomation@nodomain.com, Equals, Contains, 2020-10-26)">
+                  </a> <!-- ApplyFiltersTest(gpautomation, gpautomation@nodomain.com, Equals, Contains, 2020-10-26) -->
+                  <span class="method-name">ApplyFiltersTest</span>
+                  <span class="parameters">(gpautomation, gpautomation@nodomain.com, Equals, Contains, 2020-10-26)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFromDateReadWriteTest(2020-10-26)">
+                  </a> <!-- checkFromDateReadWriteTest(2020-10-26) -->
+                  <span class="method-name">checkFromDateReadWriteTest</span>
+                  <span class="parameters">(2020-10-26)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPageExistsTest(Users | Active Admin Depot)">
+                  </a> <!-- checkPageExistsTest(Users | Active Admin Depot) -->
+                  <span class="method-name">checkPageExistsTest</span>
+                  <span class="parameters">(Users | Active Admin Depot)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkToDateReadWriteTest(2020-10-28)">
+                  </a> <!-- checkToDateReadWriteTest(2020-10-28) -->
+                  <span class="method-name">checkToDateReadWriteTest</span>
+                  <span class="parameters">(2020-10-28)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkUserNameReadWriteTest(gpautomation)">
+                  </a> <!-- checkUserNameReadWriteTest(gpautomation) -->
+                  <span class="method-name">checkUserNameReadWriteTest</span>
+                  <span class="parameters">(gpautomation)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkUsernameDropdownDisplayedTest(true)">
+                  </a> <!-- checkUsernameDropdownDisplayedTest(true) -->
+                  <span class="method-name">checkUsernameDropdownDisplayedTest</span>
+                  <span class="parameters">(true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkemailReadWriteTest(gpautomation@nodomain.com)">
+                  </a> <!-- checkemailReadWriteTest(gpautomation@nodomain.com) -->
+                  <span class="method-name">checkemailReadWriteTest</span>
+                  <span class="parameters">(gpautomation@nodomain.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clearFiltersTest(gpautomation, gpautomation@nodomain.com, Equals, Contains, 2020-10-26, 2020-10-28)">
+                  </a> <!-- clearFiltersTest(gpautomation, gpautomation@nodomain.com, Equals, Contains, 2020-10-26, 2020-10-28) -->
+                  <span class="method-name">clearFiltersTest</span>
+                  <span class="parameters">(gpautomation, gpautomation@nodomain.com, Equals, Contains, 2020-10-26, 2020-10-28)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.gp.AutomationUI.NewUserTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cancelTest(http://qainterview.merchante-solutions.com/admin/users)">
+                  </a> <!-- cancelTest(http://qainterview.merchante-solutions.com/admin/users) -->
+                  <span class="method-name">cancelTest</span>
+                  <span class="parameters">(http://qainterview.merchante-solutions.com/admin/users)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPageExistsTest(New User | Active Admin Depot)">
+                  </a> <!-- checkPageExistsTest(New User | Active Admin Depot) -->
+                  <span class="method-name">checkPageExistsTest</span>
+                  <span class="parameters">(New User | Active Admin Depot)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordMaskedTest">
+                  </a> <!-- checkPasswordMaskedTest -->
+                  <span class="method-name">checkPasswordMaskedTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkPasswordReadWriteTest(Xyz.123)">
+                  </a> <!-- checkPasswordReadWriteTest(Xyz.123) -->
+                  <span class="method-name">checkPasswordReadWriteTest</span>
+                  <span class="parameters">(Xyz.123)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkUserNameReadWriteTest(gpautomation)">
+                  </a> <!-- checkUserNameReadWriteTest(gpautomation) -->
+                  <span class="method-name">checkUserNameReadWriteTest</span>
+                  <span class="parameters">(gpautomation)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkUsernameDisplayedTest(true)">
+                  </a> <!-- checkUsernameDisplayedTest(true) -->
+                  <span class="method-name">checkUsernameDisplayedTest</span>
+                  <span class="parameters">(true)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkemailReadWriteTest(gpautomation@nodomain.com)">
+                  </a> <!-- checkemailReadWriteTest(gpautomation@nodomain.com) -->
+                  <span class="method-name">checkemailReadWriteTest</span>
+                  <span class="parameters">(gpautomation@nodomain.com)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUserWithInvalidPasswordLengthTest(gpautomation, Xyz, gpautomation@nodomain.com, is too short (minimum is 4 characters))">
+                  </a> <!-- createUserWithInvalidPasswordLengthTest(gpautomation, Xyz, gpautomation@nodomain.com, is too short (minimum is 4 characters)) -->
+                  <span class="method-name">createUserWithInvalidPasswordLengthTest</span>
+                  <span class="parameters">(gpautomation, Xyz, gpautomation@nodomain.com, is too short (minimum is 4 characters))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\MS_USR\eclipse-workspace1\AutomationUI\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;New User Test&quot;&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;Xyz.123&quot;/&gt;
+    &lt;parameter name=&quot;shortPasswordMessage&quot; value=&quot;is too short (minimum is 4 characters)&quot;/&gt;
+    &lt;parameter name=&quot;invalidPassword&quot; value=&quot;Xyz&quot;/&gt;
+    &lt;parameter name=&quot;expectedTitle&quot; value=&quot;New User | Active Admin Depot&quot;/&gt;
+    &lt;parameter name=&quot;expectedStatus&quot; value=&quot;true&quot;/&gt;
+    &lt;parameter name=&quot;usersSearchUrl&quot; value=&quot;http://qainterview.merchante-solutions.com/admin/users&quot;/&gt;
+    &lt;parameter name=&quot;email&quot; value=&quot;gpautomation@nodomain.com&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;gpautomation&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.gp.AutomationUI.NewUserTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- New User Test --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Users Search Test&quot;&gt;
+    &lt;parameter name=&quot;fromDate&quot; value=&quot;2020-10-26&quot;/&gt;
+    &lt;parameter name=&quot;usernameOperator&quot; value=&quot;Equals&quot;/&gt;
+    &lt;parameter name=&quot;toDate&quot; value=&quot;2020-10-28&quot;/&gt;
+    &lt;parameter name=&quot;expectedTitle&quot; value=&quot;Users | Active Admin Depot&quot;/&gt;
+    &lt;parameter name=&quot;expectedStatus&quot; value=&quot;true&quot;/&gt;
+    &lt;parameter name=&quot;usersSearchUrl&quot; value=&quot;http://qainterview.merchante-solutions.com/admin/users&quot;/&gt;
+    &lt;parameter name=&quot;email&quot; value=&quot;gpautomation@nodomain.com&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;gpautomation&quot;/&gt;
+    &lt;parameter name=&quot;emailOperator&quot; value=&quot;Contains&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.gp.AutomationUI.UsersSearchTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Users Search Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">New User Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Users Search Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'cancelTest')
+data.setCell(0, 2, 'com.gp.AutomationUI.NewUserTest')
+data.setCell(0, 3, 2579);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'clearFiltersTest')
+data.setCell(1, 2, 'com.gp.AutomationUI.UsersSearchTest')
+data.setCell(1, 3, 908);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ApplyFiltersTest')
+data.setCell(2, 2, 'com.gp.AutomationUI.UsersSearchTest')
+data.setCell(2, 3, 803);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'createUserWithInvalidPasswordLengthTest')
+data.setCell(3, 2, 'com.gp.AutomationUI.NewUserTest')
+data.setCell(3, 3, 592);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'createUserTest')
+data.setCell(4, 2, 'com.gp.AutomationUI.NewUserTest')
+data.setCell(4, 3, 519);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'checkFromDateReadWriteTest')
+data.setCell(5, 2, 'com.gp.AutomationUI.UsersSearchTest')
+data.setCell(5, 3, 197);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'checkUserNameReadWriteTest')
+data.setCell(6, 2, 'com.gp.AutomationUI.NewUserTest')
+data.setCell(6, 3, 168);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'checkemailReadWriteTest')
+data.setCell(7, 2, 'com.gp.AutomationUI.UsersSearchTest')
+data.setCell(7, 3, 161);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'checkUserNameReadWriteTest')
+data.setCell(8, 2, 'com.gp.AutomationUI.UsersSearchTest')
+data.setCell(8, 3, 150);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'checkToDateReadWriteTest')
+data.setCell(9, 2, 'com.gp.AutomationUI.UsersSearchTest')
+data.setCell(9, 3, 149);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'checkemailReadWriteTest')
+data.setCell(10, 2, 'com.gp.AutomationUI.NewUserTest')
+data.setCell(10, 3, 148);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'checkPasswordReadWriteTest')
+data.setCell(11, 2, 'com.gp.AutomationUI.NewUserTest')
+data.setCell(11, 3, 141);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkUsernameDisplayedTest')
+data.setCell(12, 2, 'com.gp.AutomationUI.NewUserTest')
+data.setCell(12, 3, 81);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'checkUsernameDropdownDisplayedTest')
+data.setCell(13, 2, 'com.gp.AutomationUI.UsersSearchTest')
+data.setCell(13, 3, 51);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'checkPasswordMaskedTest')
+data.setCell(14, 2, 'com.gp.AutomationUI.NewUserTest')
+data.setCell(14, 3, 31);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'checkPageExistsTest')
+data.setCell(15, 2, 'com.gp.AutomationUI.NewUserTest')
+data.setCell(15, 3, 20);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'checkPageExistsTest')
+data.setCell(16, 2, 'com.gp.AutomationUI.UsersSearchTest')
+data.setCell(16, 3, 10);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.gp.AutomationUI.NewUserTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">startTest</span>
+                <span class="method-start">3802 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkPageExistsTest(New User | Active Admin Depot)</span>
+                <span class="method-start">4877 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkUsernameDisplayedTest(true)</span>
+                <span class="method-start">4903 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkUserNameReadWriteTest(gpautomation)</span>
+                <span class="method-start">4986 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordReadWriteTest(Xyz.123)</span>
+                <span class="method-start">5156 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkPasswordMaskedTest</span>
+                <span class="method-start">5299 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkemailReadWriteTest(gpautomation@nodomain.com)</span>
+                <span class="method-start">5332 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">createUserTest(gpautomation, Xyz.123, gpautomation@nodomain.com)</span>
+                <span class="method-start">5483 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">cancelTest(http://qainterview.merchante-solutions.com/admin/users)</span>
+                <span class="method-start">6005 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createUserWithInvalidPasswordLengthTest(gpautomation, Xyz, gpautomation@nodomain.com, is too short (minimum is 4 characters))</span>
+                <span class="method-start">8586 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">9180 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.gp.AutomationUI.UsersSearchTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9369 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">startTest</span>
+                <span class="method-start">12594 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkPageExistsTest(Users | Active Admin Depot)</span>
+                <span class="method-start">13155 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkUsernameDropdownDisplayedTest(true)</span>
+                <span class="method-start">13167 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkUserNameReadWriteTest(gpautomation)</span>
+                <span class="method-start">13220 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkemailReadWriteTest(gpautomation@nodomain.com)</span>
+                <span class="method-start">13371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkFromDateReadWriteTest(2020-10-26)</span>
+                <span class="method-start">13533 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">checkToDateReadWriteTest(2020-10-28)</span>
+                <span class="method-start">13733 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ApplyFiltersTest(gpautomation, gpautomation@nodomain.com, Equals, Contains, 2020-10-26)</span>
+                <span class="method-start">13883 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clearFiltersTest(gpautomation, gpautomation@nodomain.com, Equals, Contains, 2020-10-26, 2020-10-28)</span>
+                <span class="method-start">14687 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">15597 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
